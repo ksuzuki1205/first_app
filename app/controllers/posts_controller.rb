@@ -1,14 +1,4 @@
 class PostsController < ApplicationController
-
- def index # index アクションを定義した
-  @posts = Post.all
+  def index
+  end
  end
- 
- def new
- end
-
- def create
-  Post.create(content: params[:content])
- end
-
-end
